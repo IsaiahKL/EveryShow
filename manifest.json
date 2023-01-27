@@ -1,0 +1,32 @@
+{
+    "theme_color": "#00c3ff",
+    "background_color": "#10004f",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/file:///H:/computer programming 11/final project/TVMaze-Isaiah/index.html",
+    "name": "Every show",
+    "short_name": "E show",
+    "description": "an application to find every show.",
+    "icons": [
+        {
+            "src": "/quizlogo-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/quizlogo-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/quizlogo-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/quizlogo-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

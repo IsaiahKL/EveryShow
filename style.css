@@ -1,0 +1,198 @@
+.grid-container {
+}
+
+
+
+.heading{
+font-family:'Bungee Shade', cursive;
+color:#00c3ff;
+	grid-area:heading;
+}
+
+
+.elemEpisodes{
+		color:#51a0db;
+		font-family: 'Russo One', sans-serif;
+		grid-area:elemEpisodes;
+}
+
+.showImage{
+	width:300px;
+	height:410px;
+	grid-area:showImage;
+}
+
+.showtitle{
+  font-size:2em;
+  color:#a4daeb;
+  font-family:'Bungee', cursive;
+  	grid-area:showTitle;
+}
+
+.showGenre{
+		grid-area:showGenre;
+}
+
+.showRating{
+		grid-area:showRating;
+}
+
+.showSummary{
+		grid-area:showSummary;
+}
+
+.showDiv{	
+display: grid;
+ grid-template-areas: 
+  'heading heading heading' 
+  'showTitle showTitle showTitle' 
+  'showImage showSummary showGenre'
+  'showRating showRating showRating'
+  'elemEpisodes elemEpisodes elemEpisodes'; 
+  
+grid-template-columns: 3fr;
+ grid-template-rows: 100px;
+}
+.showDiv > *{
+
+}
+
+.showDiv a{	
+color:#43abfa;
+}
+
+
+#lightbox {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.9); 
+  display:none; 
+}
+
+#message {
+    width:80%;
+    padding:20px;
+     color:black;
+    text-align:center;
+	border-radius:15px;
+    
+    /* Center the message in the lightbox */
+    position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	font-family:'Bungee', cursive;
+	background-color:#54778c;
+}
+
+body{
+color:#ffca0a;	
+background-color:#10004f;
+text-align:center;
+}
+
+#button{
+color:#00c3ff;	
+background-color:#54778c;
+border:1px solid #00c3ff;	
+border-radius:5px;
+font-family:'Bungee', cursive;
+}
+
+#button:hover {
+  border: 2px solid #fcba03;
+  background-color:black;
+  color: #fcba03;
+}
+
+
+#search{
+border:#54778c 2px dashed;
+border-radius:5px;
+color:#50b3fa;
+background-color:black;
+width:400px;
+height:20px;
+font-family: 'Russo One', sans-serif;
+}
+
+#main{
+	color:#0ac4f7;
+	font-family: 'Russo One', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+.arrow-up {
+ width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #2608a1;
+}
+
+.arrow-down {
+ width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #2608a1;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #2608a1;
+}
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right:10px solid #2608a1; 
+}
+
+
+
+@media (max-width: 500px) {
+	
+ .showDiv  {
+   grid-template-areas: 
+  'heading heading' 
+  'showTitle showTitle' 
+  'showImage showSummary'
+  'showGenre showRating'
+  'elemEpisodes elemEpisodes'; 
+  
+	   grid-template-columns: 2fr;
+   grid-template-rows: 200px;
+  }
+  
+.showImage{
+	width:150px;
+	height:240px;
+	grid-area:showImage;
+}
+  
+  
+body{
+	background-color:#3e0bb5;
+}
+
+}
+
+
+
+
